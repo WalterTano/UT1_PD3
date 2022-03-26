@@ -8,7 +8,7 @@ package ut1_pd3;
  *
  * @author TanoW
  */
-public class Perro {
+public class Perro implements Mamifero {
     private String nombre;
     
     public Perro(String nombre) {
@@ -22,5 +22,20 @@ public class Perro {
     }
     public boolean respondeA(String unNombre) {
         return this.nombre.equals(unNombre);
+    }
+
+    @Override
+    public void caminar() {
+        System.out.println(this.nombre + " empezó a caminar");
+    }
+
+    @Override
+    public void correr() {
+        System.out.println(this.nombre + " empezó a correr");
+    }
+
+    @Override
+    public void saltar() {
+        System.out.println(this.nombre + " saltó");
     }
 }
