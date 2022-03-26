@@ -23,5 +23,10 @@ public class MainMaquinaB {
         firulais.caminar();
         firulais.correr();
         firulais.saltar();
+
+        // Máquina B
+        garfield.caminar();
+        garfield.correr();
+        garfield.saltar();
     }
 }
