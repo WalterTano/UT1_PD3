@@ -8,7 +8,7 @@ package ut1_pd3;
  *
  * @author TanoW
  */
-public class Gato {
+public class Gato implements Mamifero {
     private String nombre;
     
     public Gato(String nombre) {
@@ -22,5 +22,21 @@ public class Gato {
     }
     public boolean respondeA(String unNombre) {
         return false; //NUNCA RESPONDEN!!!
+    }
+
+    @Override
+    public void caminar() {
+        System.out.println(this.nombre + 
+                " empezó a caminar encima de los muebles");
+    }
+
+    @Override
+    public void correr() {
+        System.out.println(this.nombre + " no quiso correr");
+    }
+
+    @Override
+    public void saltar() {
+        System.out.println(this.nombre + " saltó hacia un estante");
     }
 }
