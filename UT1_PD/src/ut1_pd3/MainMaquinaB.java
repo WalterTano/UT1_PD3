@@ -14,5 +14,9 @@ public class MainMaquinaB {
         garfield.maullar();
         System.out.println(garfield.respondeA(garfield.getNombre()));
         System.out.println(garfield.respondeA("Pepe"));
+        Perro firulais = new Perro("Firulais");
+        firulais.ladrar();
+        System.out.println(firulais.respondeA(firulais.getNombre()));
+        System.out.println(firulais.respondeA("Pepe"));
     }
 }
