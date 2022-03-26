@@ -18,5 +18,10 @@ public class MainMaquinaB {
         firulais.ladrar();
         System.out.println(firulais.respondeA(firulais.getNombre()));
         System.out.println(firulais.respondeA("Pepe"));
+
+        // Máquina B
+        garfield.caminar();
+        garfield.correr();
+        garfield.saltar();
     }
 }
